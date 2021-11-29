@@ -4,7 +4,7 @@ const { Server } = require("socket.io");
 
 const app = express();
 const httpServer = createServer(app);
-const WS_PORT = 3000
+const WS_PORT = process.env.PORT || 3000;
 
 
 app.use(express.json());
